@@ -178,6 +178,78 @@ html {
 	flex: 1;
 }
 
+/* Section */
+.section {
+	width: 100%;
+	position: relative;
+}
+.section__title {
+	font-size: 24px;
+	text-align: center;
+	padding: 8px 0 18px 0;
+}
+
+/* Project */
+.project {
+	transition: 0.1s all ease-in-out;
+}
+.project__title {
+	font-size: 20px;
+	padding: 16px;
+	position: relative;
+}
+.project__title::before {
+	content: "";
+	border-radius: 4px;
+	border-top: 3px solid var(--color-dark);
+	border-right: 3px solid var(--color-dark);
+	position: absolute;
+	right: 14px;
+	bottom: 18px;
+	height: 14px;
+	width: 14px;
+	transform: rotate(45deg);
+	transition: 0.2s all ease-in-out;
+}
+.project__title:hover {
+	cursor: pointer;
+	box-shadow: var(--color-box-focus);
+}
+.project__summary {
+	overflow: hidden;
+	height: 0;
+	padding: 0 16px;
+	transition: 0.2s all ease-in-out;
+	position: relative;
+}
+.project__summary::before {
+	content: "";
+	position: absolute;
+	right: 50%;
+	width: 0;
+	top: 0;
+	height: 2px;
+	background-color: var(--color-dark);
+	transition: 0.2s all ease-in-out;
+}
+/* Open Project settings */
+.project.is--open .project__title::before {
+	transform: rotate(135deg);
+	bottom: 22px;
+}
+.project.is--open .project__summary {
+	height: auto;
+	padding: 16px;
+}
+.project.is--open .project__summary::before {
+	width: 90%;
+	right: 5%;
+}
+
+.demo_link {
+	color: blue;
+}
+
 /* Responsive settings */
 
 /* Tablet */
@@ -195,7 +267,7 @@ html {
 /* Mobile */
 @media (max-width: 720px) {
 	.App {
-		padding: 0 8px;
+		padding: 0 16px;
 	}
 	.flex.mobile--column {
 		flex-direction: column;
