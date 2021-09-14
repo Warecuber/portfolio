@@ -21,7 +21,7 @@ html {
 	left: 0;
 	width: calc(100% - 32px);
 	padding: 16px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -44,6 +44,26 @@ html {
 	background-color: #e04700;
 	color: var(--color-light);
 }
-.App__screen {
-	background-color: inherit;
+.experience {
+	border: 2px solid var(--color-dark);
+	border-radius: 16px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+.experience p {
+	margin: 0;
+	padding: 8px;
+}
+.experience p:nth-of-type(even) {
+	background-color: lightgray;
+}
+.experience p:first-of-type {
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+.experience p:last-of-type {
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+.experience a {
+	color: var(--color-dark);
 }
