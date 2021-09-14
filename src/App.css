@@ -2,22 +2,25 @@
 	--color-dark: #171c1f;
 	/* --color-light: #f0f3f5; */
 	--color-light: #edf7ef;
+	--color-box-focus: 0 0 0 4px rgba(11, 156, 240, 0.6);
+	--color-box-focus-less: 0 0 0 3px rgba(11, 156, 240, 0.6);
 }
 
 body,
 html {
 	background-color: var(--color-light);
 	height: 100vh;
-	padding: 0 10%;
 }
 
 .App {
-	padding: 90px 16px 16px;
+	margin-top: 90px;
+	padding: 0 20%;
+	position: relative;
 }
 
+/* Header/navbar */
 .header {
 	background-color: var(--color-dark);
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: calc(100% - 32px);
@@ -28,6 +31,7 @@ html {
 	justify-content: space-between;
 	align-items: center;
 	color: white;
+	position: fixed;
 }
 .header__title {
 	font-size: 32px;
@@ -45,6 +49,92 @@ html {
 	background-color: #e04700;
 	color: var(--color-light);
 }
+.mobile__nav__contents .header__button {
+	width: calc(100% - 32px);
+	margin: 16px 0;
+	text-align: center;
+	font-size: 20px;
+	padding: 16px;
+}
+.hamburgerMenu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	width: 48px;
+	background-color: var(--color-light);
+	border-radius: 8px;
+}
+.menuContents {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 32px;
+}
+.hamburgerMenu:hover {
+	cursor: pointer;
+	box-shadow: var(--color-box-focus);
+}
+.menuRow {
+	position: relative;
+	width: 32px;
+	height: 6px;
+}
+.menuRow::before {
+	content: "";
+	width: 32px;
+	height: 3px;
+	border-radius: 3px;
+	background-color: rgb(59, 59, 59);
+	position: absolute;
+	top: 2px;
+	left: 0;
+	opacity: 1;
+	transition: 0.1s all ease-in-out;
+}
+.mobile__nav {
+	height: 0;
+	overflow: hidden;
+	transition: 0.2s all ease-in-out;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	height: 0;
+	transform-origin: top;
+	transform: translateY(16px);
+	background-color: var(--color-dark);
+}
+.mobile__nav__contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 32px;
+	transition: 0.2s all ease-in-out;
+}
+/* If the mobile nav is open */
+.is--open .mobile__nav {
+	height: 100%;
+}
+.is--open .mobile__nav__contents {
+	transform: scaleY(1);
+	padding: 32px;
+}
+.is--open .row__top::before {
+	transform: rotate(45deg);
+	top: 8px;
+}
+.is--open .row__middle::before {
+	opacity: 0;
+}
+.is--open .row__bottom::before {
+	transform: rotate(-45deg);
+	top: -4px;
+}
+
+/* Sections */
 .intro {
 	font-size: 24px;
 	margin: 0;
@@ -72,6 +162,8 @@ html {
 .experience a {
 	color: var(--color-dark);
 }
+
+/* Flex */
 .flex {
 	display: flex;
 }
@@ -86,16 +178,23 @@ html {
 	flex: 1;
 }
 
+/* Responsive settings */
+
 /* Tablet */
 @media (max-width: 1024px) {
-	.need__card {
-		width: 75%;
+	.App {
+		padding: 0 10%;
+	}
+	.flex.mobile--column {
+		flex-direction: column;
+	}
+	.flex .half-width {
+		width: 100%;
 	}
 }
 /* Mobile */
 @media (max-width: 720px) {
-	body,
-	html {
+	.App {
 		padding: 0 8px;
 	}
 	.flex.mobile--column {

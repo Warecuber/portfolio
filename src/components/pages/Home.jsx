@@ -18,18 +18,19 @@ const Home = () => {
 								href="https://github.com/Warecuber/Ubuntu-Configure"
 								className="is--link"
 								target="_blank"
+								rel="noreferrer"
 							>
 								Bash
 							</a>
 						</p>
-						<p>MySQL</p>
-						<p>MongoDB</p>
+						<p>SQL</p>
+						<p>BSON</p>
 						<p>Python</p>
 						<p>Deluge Script</p>
 					</div>
 				</div>
 				<div className="half-width">
-					<p>Frameworks Used</p>
+					<p>Frameworks/technologies Used</p>
 					<div className="experience">
 						<p>ExpressJS</p>
 						<p>
@@ -37,6 +38,7 @@ const Home = () => {
 								href="https://github.com/Warecuber/todo_app"
 								className="is--link"
 								target="_blank"
+								rel="noreferrer"
 							>
 								ElectronJS
 							</a>
@@ -45,6 +47,8 @@ const Home = () => {
 						<p>React Native</p>
 						<p>Docker</p>
 						<p>Nginx</p>
+						<p>MySQL</p>
+						<p>MongoDB</p>
 						<p>GitLab/Github</p>
 						<p>GitLab CI pipelines</p>
 						<p>Kemp load balancer</p>
