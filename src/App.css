@@ -8,6 +8,7 @@ body,
 html {
 	background-color: var(--color-light);
 	height: 100vh;
+	padding: 0 10%;
 }
 
 .App {
@@ -44,6 +45,10 @@ html {
 	background-color: #e04700;
 	color: var(--color-light);
 }
+.intro {
+	font-size: 24px;
+	margin: 0;
+}
 .experience {
 	border: 2px solid var(--color-dark);
 	border-radius: 16px;
@@ -66,4 +71,37 @@ html {
 }
 .experience a {
 	color: var(--color-dark);
+}
+.flex {
+	display: flex;
+}
+.flex.row {
+	flex-direction: row;
+}
+.flex .half-width {
+	width: 45%;
+}
+.flex.between {
+	justify-content: space-between;
+	flex: 1;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+	.need__card {
+		width: 75%;
+	}
+}
+/* Mobile */
+@media (max-width: 720px) {
+	body,
+	html {
+		padding: 0 8px;
+	}
+	.flex.mobile--column {
+		flex-direction: column;
+	}
+	.flex .half-width {
+		width: 100%;
+	}
 }
