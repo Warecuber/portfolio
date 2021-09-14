@@ -32,6 +32,7 @@ html {
 	align-items: center;
 	color: white;
 	position: fixed;
+	z-index: 9999999;
 }
 .header__title {
 	font-size: 32px;
@@ -181,7 +182,6 @@ html {
 /* Section */
 .section {
 	width: 100%;
-	position: relative;
 }
 .section__title {
 	font-size: 24px;
@@ -231,6 +231,15 @@ html {
 	height: 2px;
 	background-color: var(--color-dark);
 	transition: 0.2s all ease-in-out;
+}
+.project__links {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.project__links a {
+	padding: 0 8px;
 }
 /* Open Project settings */
 .project.is--open .project__title::before {
