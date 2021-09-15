@@ -1,12 +1,16 @@
 import { React } from "react";
 import Project from "../../ui/Project";
 
-const SamaritanMinistries = () => {
+import SMINeedsImg from "./img/smi_needs.png";
+import SMIMembersImg from "./img/smi_members.png";
+
+const SamaritanMinistriesClone = () => {
 	return (
 		<Project
-			title="Samaritan Ministries"
+			title="Samaritan Ministries Clone"
 			titleStyle={{ backgroundColor: "#595478", color: "white" }}
 			bodyStyle={{ backgroundColor: "#595478", color: "white" }}
+			tags={["ReactJS", "MySQL", "Docker"]}
 			projectSummary={
 				<div>
 					<p className="project__description">
@@ -18,10 +22,20 @@ const SamaritanMinistries = () => {
 						most intricate project. Please contact me if you would like a demo
 						or screenshots of this app.
 					</p>
+					<img
+						src={SMINeedsImg}
+						alt="Samaritan clone Needs page"
+						className="project__img"
+					/>
+					<img
+						src={SMIMembersImg}
+						alt="Samaritan clone Member page"
+						className="project__img"
+					/>
 				</div>
 			}
 		/>
 	);
 };
 
-export default SamaritanMinistries;
+export default SamaritanMinistriesClone;

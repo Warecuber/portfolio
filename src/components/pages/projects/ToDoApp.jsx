@@ -10,6 +10,7 @@ const ToDoApp = () => {
 			title="ToDo App"
 			titleStyle={{ backgroundColor: "#52796f", color: "white" }}
 			bodyStyle={{ backgroundColor: "#52796f", color: "white" }}
+			tags={["ElectronJS", "NodeJS", "MongoDB"]}
 			projectSummary={
 				<div>
 					<div className="project__links">

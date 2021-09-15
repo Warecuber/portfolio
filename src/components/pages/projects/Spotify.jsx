@@ -9,6 +9,7 @@ const Spotify = () => {
 			title="Spotify Stats"
 			titleStyle={{ backgroundColor: "#1db954" }}
 			bodyStyle={{ backgroundColor: "#1db954" }}
+			tags={["JavaScript", "API"]}
 			projectSummary={
 				<div>
 					<div className="project__links">

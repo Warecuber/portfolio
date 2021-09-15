@@ -7,6 +7,7 @@ const UbuntuConfiguration = () => {
 			title="Ubuntu Configuration"
 			titleStyle={{ backgroundColor: "#E95420", color: "white" }}
 			bodyStyle={{ backgroundColor: "#E95420", color: "white" }}
+			tags={["Bash", "Linux"]}
 			projectSummary={
 				<div>
 					<div className="project__links">

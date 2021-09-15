@@ -196,12 +196,51 @@ html {
 	transition: 0.1s all ease-in-out;
 	margin-bottom: 16px;
 }
-.project__title {
-	font-size: 20px;
+.project__title__container {
 	padding: 16px;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 32px;
 }
-.project__title::before {
+.project__title {
+	font-size: 20px;
+}
+.project__tag {
+	font-size: 12px;
+	margin: 0 4px;
+	border-radius: 8px;
+	padding: 4px 8px;
+	background-color: var(--color-light);
+	color: black;
+}
+
+/* Tag themes */
+.project__tag.is--reactjs {
+	background-color: #61dbfb;
+}
+.project__tag.is--docker {
+	background-color: #0db7ed;
+}
+.project__tag.is--mysql {
+	background-color: #f29111;
+	color: white;
+}
+.project__tag.is--nodejs {
+	background-color: #026e00;
+	color: white;
+}
+.project__tag.is--jquery {
+	background-color: #0769ad;
+	color: white;
+}
+.project__tag.is--mongodb {
+	background-color: #4db33d;
+	color: white;
+}
+
+.project__title__container::before {
 	content: "";
 	border-radius: 4px;
 	border-top: 3px solid var(--color-dark);
@@ -214,7 +253,7 @@ html {
 	transform: rotate(45deg);
 	transition: 0.2s all ease-in-out;
 }
-.project__title:hover {
+.project__title__container:hover {
 	cursor: pointer;
 	box-shadow: var(--color-box-focus);
 }
@@ -252,7 +291,7 @@ html {
 	margin-top: 8px;
 }
 /* Open Project style */
-.project.is--open .project__title::before {
+.project.is--open .project__title__container::before {
 	transform: rotate(135deg);
 	bottom: 22px;
 }
@@ -291,6 +330,7 @@ html {
 	color: rgb(5, 5, 158);
 }
 .inline_link,
+.inline_link:not(:visited),
 .inline_link:visited {
 	color: var(--color-orange);
 }
@@ -319,5 +359,8 @@ html {
 	}
 	.flex .half-width {
 		width: 100%;
+	}
+	.project__tags {
+		margin: 8px 0 0 0;
 	}
 }

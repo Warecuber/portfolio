@@ -9,6 +9,7 @@ const CubeTimer = () => {
 			title="Cube Timer"
 			titleStyle={{ backgroundColor: "#4F7CAC", color: "white" }}
 			bodyStyle={{ backgroundColor: "#4F7CAC", color: "white" }}
+			tags={["JavaScript", "JQuery", "DOM"]}
 			projectSummary={
 				<div>
 					<div className="project__links">

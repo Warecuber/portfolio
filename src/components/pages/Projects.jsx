@@ -5,7 +5,8 @@ import Spotify from "./projects/Spotify";
 import CubeTimer from "./projects/CubeTimer";
 import ToDoApp from "./projects/ToDoApp";
 import UbuntuConfiguration from "./projects/UbuntuConfiguration";
-import SamaritanMinistries from "./projects/SamaritanMinistries";
+import SamaritanMinistriesClone from "./projects/SamaritanMinistriesClone";
+import ServicePortal from "./projects/ServicePortal";
 
 const Projects = () => {
 	return (
@@ -16,7 +17,8 @@ const Projects = () => {
 				<CubeTimer />
 				<UbuntuConfiguration />
 				<ToDoApp />
-				<SamaritanMinistries />
+				<SamaritanMinistriesClone />
+				<ServicePortal />
 			</div>
 		</div>
 	);

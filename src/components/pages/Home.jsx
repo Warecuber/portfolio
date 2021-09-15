@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<div className="section">
 			<div className="section__title">
-				Hi, I'm John Ware! I've taught myself fullstack web development.
+				Hi, I'm John Ware, a DIY fullstack web developer!
 			</div>
 			<p>
 				Below is a summary of my experience. The{" "}
@@ -17,7 +17,7 @@ const Home = () => {
 			</p>
 			<div className="flex row between mobile--column">
 				<div className="half-width">
-					<p>Languages Used</p>
+					<p>Languages</p>
 					<div className="experience">
 						<p>HTML</p>
 						<p>CSS</p>
@@ -39,7 +39,7 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="half-width">
-					<p>Frameworks/technologies Used</p>
+					<p>Frameworks/tools</p>
 					<div className="experience">
 						<p>ExpressJS</p>
 						<p>
@@ -69,11 +69,12 @@ const Home = () => {
 						<p>Regex</p>
 						<p>MySQL</p>
 						<p>MongoDB</p>
+						<p>Git</p>
 						<p>GitLab/Github</p>
 						<p>GitLab CI pipelines</p>
 						<p>bcrypt</p>
 						<p>Kemp load balancer</p>
-						<p>Ubuntu/CentOS Linux</p>
+						<p>Ubuntu/CentOS Linux/WSL</p>
 					</div>
 				</div>
 			</div>
