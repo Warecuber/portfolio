@@ -9,7 +9,7 @@
 body,
 html {
 	background-color: var(--color-light);
-	min-height: 100vh;
+	min-height: calc(100vh - 90px);
 }
 
 .App {
@@ -250,7 +250,7 @@ html {
 	border-radius: 8px;
 	margin-top: 8px;
 }
-/* Open Project settings */
+/* Open Project style */
 .project.is--open .project__title::before {
 	transform: rotate(135deg);
 	bottom: 22px;

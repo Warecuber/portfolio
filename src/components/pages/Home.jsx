@@ -52,7 +52,16 @@ const Home = () => {
 								ElectronJS
 							</a>
 						</p>
-						<p>ReactJS</p>
+						<p>
+							<a
+								href="https://github.com/Warecuber/portfolio"
+								className="inline_link"
+								target="_blank"
+								rel="noreferrer"
+							>
+								ReactJS
+							</a>
+						</p>
 						<p>jQuery</p>
 						<p>React Native</p>
 						<p>Docker</p>
