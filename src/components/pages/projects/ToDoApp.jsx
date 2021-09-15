@@ -1,6 +1,9 @@
 import { React } from "react";
 import Project from "../../ui/Project";
 
+import toDoAppDemo1 from "./img/todo_1.png";
+import toDoAppDemo2 from "./img/todo_2.png";
+
 const ToDoApp = () => {
 	return (
 		<Project
@@ -42,6 +45,16 @@ const ToDoApp = () => {
 						learned about storing a hashed and salted password, creating a JSON
 						Web Token, sending emails from a Gmail account via NodeJS, and
 						creating a self-service password reset.
+						<img
+							src={toDoAppDemo1}
+							alt="ToDo App Home"
+							className="project__img"
+						/>
+						<img
+							src={toDoAppDemo2}
+							alt="ToDo App Item"
+							className="project__img"
+						/>
 					</p>
 				</div>
 			}

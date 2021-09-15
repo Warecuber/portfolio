@@ -1,6 +1,5 @@
 import { React } from "react";
 import Project from "../../ui/Project";
-import { Link } from "react-router-dom";
 
 const SamaritanMinistries = () => {
 	return (

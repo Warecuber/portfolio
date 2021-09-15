@@ -243,6 +243,13 @@ html {
 .project__links a {
 	padding: 0 8px;
 }
+.project__img {
+	max-width: calc(100% - 16px);
+	padding: 8px;
+	border: 2px solid var(--color-dark);
+	border-radius: 8px;
+	margin-top: 8px;
+}
 /* Open Project settings */
 .project.is--open .project__title::before {
 	transform: rotate(135deg);
@@ -257,6 +264,7 @@ html {
 	right: 5%;
 }
 
+/* Links */
 .demo_link {
 	color: white;
 	transition: 0.1s all ease-in-out;

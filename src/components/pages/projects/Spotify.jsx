@@ -1,6 +1,8 @@
 import { React } from "react";
 import Project from "../../ui/Project";
 
+import spotifyStatsImg from "./img/spotify_stats.png";
+
 const Spotify = () => {
 	return (
 		<Project
@@ -33,6 +35,11 @@ const Spotify = () => {
 						party app. This project taught me how to use a public API with
 						OAuth. It also helped with learning when to use Function
 						Constructors and Prototypes.
+						<img
+							src={spotifyStatsImg}
+							alt="Spotify Stats screenshot"
+							className="project__img"
+						/>
 					</p>
 				</div>
 			}

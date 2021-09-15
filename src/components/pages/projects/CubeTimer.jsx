@@ -1,6 +1,8 @@
 import { React } from "react";
 import Project from "../../ui/Project";
 
+import cubeTimerImg from "./img/cube_timer.png";
+
 const CubeTimer = () => {
 	return (
 		<Project
@@ -32,6 +34,11 @@ const CubeTimer = () => {
 						generator and solve history. It's a web app using mostly jQuery and
 						ES5 JS. I learned about creating interactive modals and
 						reading/writing data in localStorage.
+						<img
+							src={cubeTimerImg}
+							alt="Cuber Timer screenshot"
+							className="project__img"
+						/>
 					</p>
 				</div>
 			}
