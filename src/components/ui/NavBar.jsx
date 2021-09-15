@@ -60,6 +60,15 @@ const NavBar = () => {
 							>
 								Projects
 							</Link>
+							<Link
+								to="/education"
+								className="header__button"
+								onClick={() => {
+									setMobileNavIsOpen(false);
+								}}
+							>
+								Education
+							</Link>
 							<a
 								href="https://github.com/warecuber"
 								target="_blank"
@@ -81,6 +90,9 @@ const NavBar = () => {
 					</Link>
 					<Link to="/projects" className="header__button">
 						Projects
+					</Link>
+					<Link to="/education" className="header__button">
+						Education
 					</Link>
 					<a
 						href="https://github.com/warecuber"

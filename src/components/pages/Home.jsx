@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<div className="section">
 			<div className="section__title">
-				Hi, I'm John Ware! I've taught myself fullstack development.
+				Hi, I'm John Ware! I've taught myself fullstack web development.
 			</div>
 			<p>
 				Below is a summary of my experience. The{" "}
@@ -66,6 +66,7 @@ const Home = () => {
 						<p>React Native</p>
 						<p>Docker</p>
 						<p>Nginx</p>
+						<p>Regex</p>
 						<p>MySQL</p>
 						<p>MongoDB</p>
 						<p>GitLab/Github</p>

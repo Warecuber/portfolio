@@ -6,6 +6,7 @@ import NavBar from "./ui/NavBar";
 // Import pages
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Education from "./pages/Education";
 
 const AppRouter = () => {
 	return (
@@ -13,6 +14,7 @@ const AppRouter = () => {
 			<NavBar />
 			<Route path="/" exact component={Home} />
 			<Route path="/projects" exact component={Projects} />
+			<Route path="/education" exact component={Education} />
 		</Router>
 	);
 };

@@ -4,6 +4,7 @@
 	--color-light: #edf7ef;
 	--color-box-focus: 0 0 0 4px rgba(11, 156, 240, 0.6);
 	--color-box-focus-less: 0 0 0 3px rgba(11, 156, 240, 0.6);
+	--color-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 body,
@@ -26,7 +27,7 @@ html {
 	left: 0;
 	width: calc(100% - 32px);
 	padding: 16px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+	box-shadow: var(--color-shadow);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -144,7 +145,7 @@ html {
 .experience {
 	border: 2px solid var(--color-dark);
 	border-radius: 16px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+	box-shadow: var(--color-shadow);
 }
 .experience p {
 	margin: 0;
@@ -262,6 +263,23 @@ html {
 .project.is--open .project__summary::before {
 	width: 90%;
 	right: 5%;
+}
+
+/* Education */
+.education__item {
+	margin-bottom: 16px;
+	border: 2px solid var(--color-dark);
+	border-radius: 8px;
+	box-shadow: var(--color-shadow);
+}
+.education__title {
+	padding: 16px;
+	font-size: 20px;
+	background-color: var(--color-dark);
+	color: var(--color-light);
+}
+.education__details {
+	padding: 16px;
 }
 
 /* Links */
