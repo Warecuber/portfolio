@@ -1,10 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	return (
-		<div>
-			<p className="intro">
+		<div className="section">
+			<div className="section__title">
 				Hi, I'm John Ware! I've taught myself fullstack development.
+			</div>
+			<p>
+				Below is a summary of my experience. The{" "}
+				<Link to="/projects" className="inline_link">
+					projects
+				</Link>{" "}
+				tab explains some of my personal projects and provices links to
+				examples.
 			</p>
 			<div className="flex row between mobile--column">
 				<div className="half-width">
@@ -16,7 +25,7 @@ const Home = () => {
 						<p>
 							<a
 								href="https://github.com/Warecuber/Ubuntu-Configure"
-								className="is--link"
+								className="inline_link"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -36,7 +45,7 @@ const Home = () => {
 						<p>
 							<a
 								href="https://github.com/Warecuber/todo_app"
-								className="is--link"
+								className="inline_link"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -44,6 +53,7 @@ const Home = () => {
 							</a>
 						</p>
 						<p>ReactJS</p>
+						<p>jQuery</p>
 						<p>React Native</p>
 						<p>Docker</p>
 						<p>Nginx</p>
@@ -51,6 +61,7 @@ const Home = () => {
 						<p>MongoDB</p>
 						<p>GitLab/Github</p>
 						<p>GitLab CI pipelines</p>
+						<p>bcrypt</p>
 						<p>Kemp load balancer</p>
 						<p>Ubuntu/CentOS Linux</p>
 					</div>

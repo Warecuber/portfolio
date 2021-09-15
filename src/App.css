@@ -1,6 +1,6 @@
 :root {
 	--color-dark: #171c1f;
-	/* --color-light: #f0f3f5; */
+	--color-orange: #e04700;
 	--color-light: #edf7ef;
 	--color-box-focus: 0 0 0 4px rgba(11, 156, 240, 0.6);
 	--color-box-focus-less: 0 0 0 3px rgba(11, 156, 240, 0.6);
@@ -9,11 +9,12 @@
 body,
 html {
 	background-color: var(--color-light);
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .App {
 	margin-top: 90px;
+	margin-bottom: 16px;
 	padding: 0 20%;
 	position: relative;
 }
@@ -47,7 +48,7 @@ html {
 	transition: 0.1s all ease-in-out;
 }
 .header__button:hover {
-	background-color: #e04700;
+	background-color: var(--color-orange);
 	color: var(--color-light);
 }
 .mobile__nav__contents .header__button {
@@ -192,6 +193,7 @@ html {
 /* Project */
 .project {
 	transition: 0.1s all ease-in-out;
+	margin-bottom: 16px;
 }
 .project__title {
 	font-size: 20px;
@@ -235,7 +237,7 @@ html {
 .project__links {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 }
 .project__links a {
@@ -256,7 +258,15 @@ html {
 }
 
 .demo_link {
-	color: blue;
+	color: white;
+	transition: 0.1s all ease-in-out;
+}
+.demo_link:hover {
+	color: rgb(5, 5, 158);
+}
+.inline_link,
+.inline_link:visited {
+	color: var(--color-orange);
 }
 
 /* Responsive settings */

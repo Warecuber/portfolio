@@ -12,7 +12,7 @@ const AppRouter = () => {
 		<Router>
 			<NavBar />
 			<Route path="/" exact component={Home} />
-			<Route path="/projects" component={Projects} />
+			<Route path="/projects" exact component={Projects} />
 		</Router>
 	);
 };

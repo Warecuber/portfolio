@@ -11,14 +11,6 @@ const Spotify = () => {
 				<div>
 					<div className="project__links">
 						<a
-							href="https://warecuber.github.io/SpotifyInfo/"
-							target="_Blank"
-							rel="noreferrer"
-							className="demo_link"
-						>
-							Working Demo
-						</a>
-						<a
 							href="https://github.com/Warecuber/SpotifyInfo"
 							target="_Blank"
 							rel="noreferrer"
@@ -26,11 +18,21 @@ const Spotify = () => {
 						>
 							Source code
 						</a>
+						<a
+							href="https://warecuber.github.io/SpotifyInfo/"
+							target="_Blank"
+							rel="noreferrer"
+							className="demo_link"
+						>
+							Working Demo
+						</a>
 					</div>
 					<p className="project__description">
 						I created the Spotify Stats because I wanted to see my most popular
-						songs/artists on Spotify, but did not want to aothenticate to a 3rd
-						party app. This was also my first project using OAuth.
+						songs/artists on Spotify, but did not want to authenticate to a 3rd
+						party app. This project taught me how to use a public API with
+						OAuth. It also helped with learning when to use Function
+						Constructors and Prototypes.
 					</p>
 				</div>
 			}
