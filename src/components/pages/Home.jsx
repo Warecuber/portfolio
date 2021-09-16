@@ -72,6 +72,11 @@ const Home = () => {
 						<p>Git</p>
 						<p>GitLab/Github</p>
 						<p>GitLab CI pipelines</p>
+						<p>VSCode</p>
+						<p>Postman</p>
+						<p>MySQL Workbench</p>
+						<p>Robo 3T</p>
+						<p>React Native Debugger</p>
 						<p>bcrypt</p>
 						<p>Kemp load balancer</p>
 						<p>Ubuntu/CentOS Linux/WSL</p>
