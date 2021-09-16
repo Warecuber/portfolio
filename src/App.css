@@ -320,6 +320,12 @@ html {
 .education__details {
 	padding: 16px;
 }
+.education__item__titla {
+	font-weight: bold;
+}
+.education__item__titla:not(:first-of-type) {
+	margin-top: 12px;
+}
 
 /* Links */
 .demo_link {
