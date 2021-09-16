@@ -41,7 +41,8 @@ const Home = () => {
 				<div className="half-width">
 					<p>Frameworks/tools</p>
 					<div className="experience">
-						<p>ExpressJS</p>
+						<p>Bcrypt</p>
+						<p>Docker</p>
 						<p>
 							<a
 								href="https://github.com/Warecuber/todo_app"
@@ -52,6 +53,17 @@ const Home = () => {
 								ElectronJS
 							</a>
 						</p>
+						<p>ExpressJS</p>
+						<p>Git</p>
+						<p>GitLab/Github</p>
+						<p>GitLab CI pipelines</p>
+						<p>jQuery</p>
+						<p>Kemp load balancer</p>
+						<p>MongoDB</p>
+						<p>MySQL</p>
+						<p>MySQL Workbench</p>
+						<p>Nginx</p>
+						<p>Postman</p>
 						<p>
 							<a
 								href="https://github.com/Warecuber/portfolio"
@@ -62,24 +74,12 @@ const Home = () => {
 								ReactJS
 							</a>
 						</p>
-						<p>jQuery</p>
 						<p>React Native</p>
-						<p>Docker</p>
-						<p>Nginx</p>
-						<p>Regex</p>
-						<p>MySQL</p>
-						<p>MongoDB</p>
-						<p>Git</p>
-						<p>GitLab/Github</p>
-						<p>GitLab CI pipelines</p>
-						<p>VSCode</p>
-						<p>Postman</p>
-						<p>MySQL Workbench</p>
-						<p>Robo 3T</p>
 						<p>React Native Debugger</p>
-						<p>bcrypt</p>
-						<p>Kemp load balancer</p>
+						<p>Regex</p>
+						<p>Robo 3T</p>
 						<p>Ubuntu/CentOS Linux/WSL</p>
+						<p>VSCode</p>
 					</div>
 				</div>
 			</div>
