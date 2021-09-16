@@ -17,10 +17,7 @@ const Project = (props) => {
 					<span className="project__title">{props.title}</span>
 					<div className="project__tags">
 						{tags.map((tag) => (
-							<span
-								className={`project__tag is--${tag.toLowerCase()}`}
-								key={tag}
-							>
+							<span className="project__tag" key={tag}>
 								{tag}
 							</span>
 						))}

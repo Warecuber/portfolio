@@ -217,7 +217,7 @@ html {
 }
 
 /* Tag themes */
-.project__tag.is--reactjs {
+/* .project__tag.is--reactjs {
 	background-color: #61dbfb;
 }
 .project__tag.is--docker {
@@ -238,7 +238,7 @@ html {
 .project__tag.is--mongodb {
 	background-color: #4db33d;
 	color: white;
-}
+} */
 
 .project__title__container::before {
 	content: "";
