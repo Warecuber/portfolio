@@ -19,9 +19,6 @@ const Home = () => {
 				<div className="half-width">
 					<p>Languages</p>
 					<div className="experience">
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JavaScript</p>
 						<p>
 							<a
 								href="https://github.com/Warecuber/Ubuntu-Configure"
@@ -32,10 +29,12 @@ const Home = () => {
 								Bash
 							</a>
 						</p>
-						<p>SQL</p>
-						<p>BSON</p>
-						<p>Python</p>
+						<p>CSS</p>
 						<p>Deluge Script</p>
+						<p>HTML</p>
+						<p>JavaScript</p>
+						<p>Python</p>
+						<p>SQL</p>
 					</div>
 				</div>
 				<div className="half-width">
