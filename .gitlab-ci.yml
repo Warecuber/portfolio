@@ -38,4 +38,4 @@ deploy:
     - version_number=$(date +"%Y.%m.%d.%H%M-$CI_BUILD_REF_NAME")
     - ssh-add <(echo "$DEPLOY_USER_SSH_KEY" | tr -d '\r')
     - ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
-    - scp -r ./build/ $SERVICE_ACCOUNT@$SERVER_IP:/usr/share/nginx/portfolio/
+    - scp -r ./build/* $SERVICE_ACCOUNT@$SERVER_IP:/usr/share/nginx/portfolio/

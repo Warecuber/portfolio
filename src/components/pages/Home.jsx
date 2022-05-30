@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<div className="section">
 			<div className="section__title">
-				Hi, I'm John Ware, a DevOps Administrator!
+				Hi, I'm John Ware, a DevOps Administrator/DIY Fullstack Developer!
 			</div>
 			<p>
 				Below is a summary of my experience. The{" "}
