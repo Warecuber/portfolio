@@ -30,7 +30,7 @@ deploy:
     SERVER_NAME: "EOD-WEB-01"
     SERVICE_ACCOUNT: "deploy"
     SERVER_IP: "192.168.7.137"
-    script:
+  script:
     - apt update
     - apt install openssh-client -y
     - mkdir -p ~/.ssh
