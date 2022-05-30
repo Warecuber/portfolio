@@ -1,0 +1,40 @@
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+build:
+  image: node:alpine
+  stage: build
+  only:
+    - main
+  script:
+    - npm i
+    - npm run build
+  artifacts:
+      when: on_success
+      name: portfolio-build
+      paths:
+        - build
+      expire_in: 1 hour
+  
+deploy: 
+  image: ubuntu
+  stage: deploy
+  only:
+    - main
+  variables:
+    SERVER_NAME: "EOD-WEB-01"
+    SERVICE_ACCOUNT: "deploy"
+    SERVER_IP: "192.168.7.137"
+    script:
+    - apt update
+    - apt install openssh-client -y
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$DEPLOY_USER_SSH_KEY" | tr -d '\r')
+    - ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
+    - scp ./build/ $SERVICE_ACCOUNT@$SERVER_IP:/usr/share/nginx/portfolio/

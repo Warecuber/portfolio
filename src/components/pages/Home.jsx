@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<div className="section">
 			<div className="section__title">
-				Hi, I'm John Ware, a DIY fullstack web developer!
+				Hi, I'm John Ware, a DevOps Administrator!
 			</div>
 			<p>
 				Below is a summary of my experience. The{" "}
@@ -40,6 +40,7 @@ const Home = () => {
 				<div className="half-width">
 					<p>Frameworks/tools</p>
 					<div className="experience">
+						<p>Ansible Tower/AWX</p>
 						<p>Bcrypt</p>
 						<p>Docker</p>
 						<p>
@@ -59,7 +60,7 @@ const Home = () => {
 						<p>jQuery</p>
 						<p>Kemp load balancer</p>
 						<p>MongoDB</p>
-						<p>MySQL</p>
+						<p>MySQL/MariaDB</p>
 						<p>MySQL Workbench</p>
 						<p>Nginx</p>
 						<p>Postman</p>
@@ -76,8 +77,9 @@ const Home = () => {
 						<p>React Native</p>
 						<p>React Native Debugger</p>
 						<p>Regex</p>
+						<p>Splunk</p>
 						<p>Robo 3T</p>
-						<p>Ubuntu/CentOS Linux/WSL</p>
+						<p>Debian/RHEL Linux Distros</p>
 						<p>VSCode</p>
 					</div>
 				</div>
