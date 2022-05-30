@@ -18,10 +18,10 @@ const ServicePortal = () => {
 						submitting. This allows the forms to have a custom style and custom
 						fields while still utilizing the pre-generated form. I've written
 						the majority of the code myself and it has expanded to include forms
-						to send tickets to 4 other departments. I also have configured the
-						Nginx settings with a reverse proxy to allow 2 backend servers
-						hosted at the same subdomain as the frontend. This portal is
-						utilized by around 400 employees every day.
+						to send tickets to 4 other departments. I also manage the Linux
+						servers (Oracle Linux 8), which consists of Nginx with a reverse
+						proxy to allow 2 backend servers hosted at the same subdomain as the
+						frontend. This portal is utilized by around 400 employees every day.
 					</p>
 				</div>
 			}

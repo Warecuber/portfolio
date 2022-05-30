@@ -17,10 +17,10 @@ const SamaritanMinistriesClone = () => {
 						This project was to rebuild the Samaritan Ministries legacy web
 						application from the ground up with a newer style. Since this
 						project is only for personal use, it is not publicly accessible. The
-						frontend is ReactJS with Redux for state management, the backend 2
-						ExpressJS servers, and the database is MySQL. This is my current and
-						most intricate project. Please contact me if you would like a demo
-						or screenshots of this app.
+						frontend is ReactJS and Redux, the backend consists of multiple
+						ExpressJS servers for microservices, and the database is MySQL. It's
+						load-balanced with an Nginx server and the Linux servers hosting the
+						Docker containers can be rebuilt/destroyed on demand with AWX jobs.
 					</p>
 					<img
 						src={SMINeedsImg}

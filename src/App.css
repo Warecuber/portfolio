@@ -15,7 +15,7 @@ html {
 
 .App {
 	margin-top: 90px;
-	margin-bottom: 16px;
+	margin-bottom: 32px;
 	padding: 0 20%;
 	position: relative;
 }
@@ -216,30 +216,6 @@ html {
 	color: black;
 }
 
-/* Tag themes */
-/* .project__tag.is--reactjs {
-	background-color: #61dbfb;
-}
-.project__tag.is--docker {
-	background-color: #0db7ed;
-}
-.project__tag.is--mysql {
-	background-color: #f29111;
-	color: white;
-}
-.project__tag.is--nodejs {
-	background-color: #026e00;
-	color: white;
-}
-.project__tag.is--jquery {
-	background-color: #0769ad;
-	color: white;
-}
-.project__tag.is--mongodb {
-	background-color: #4db33d;
-	color: white;
-} */
-
 .project__title__container::before {
 	content: "";
 	border-radius: 4px;
@@ -339,6 +315,12 @@ html {
 .inline_link:not(:visited),
 .inline_link:visited {
 	color: var(--color-orange);
+}
+
+.version {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
 }
 
 /* Responsive settings */
