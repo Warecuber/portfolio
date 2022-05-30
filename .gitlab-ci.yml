@@ -7,7 +7,7 @@ cache:
     - node_modules/
 
 build:
-  image: node:alpine
+  image: node
   stage: build
   only:
     - main
@@ -35,6 +35,7 @@ deploy:
     - apt install openssh-client -y
     - mkdir -p ~/.ssh
     - eval $(ssh-agent -s)
+    - version_number=$(date +"%Y.%m.%d.%H%M-$CI_BUILD_REF_NAME")
     - ssh-add <(echo "$DEPLOY_USER_SSH_KEY" | tr -d '\r')
     - ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
     - scp ./build/ $SERVICE_ACCOUNT@$SERVER_IP:/usr/share/nginx/portfolio/
