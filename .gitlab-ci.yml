@@ -7,7 +7,7 @@ cache:
     - node_modules/
 
 build:
-  image: node
+  image: node:16.13.0
   stage: build
   only:
     - main
