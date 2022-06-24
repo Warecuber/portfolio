@@ -31,12 +31,11 @@ deploy:
   variables:
     SERVER_NAME: "EOD-WEB-01"
     SERVICE_ACCOUNT: "deploy"
-    SERVER_IP: "192.168.7.137"
   script:
     - apt update
     - apt install openssh-client -y
     - mkdir -p ~/.ssh
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$DEPLOY_USER_SSH_KEY" | tr -d '\r')
-    - ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
-    - scp -r ./build/* $SERVICE_ACCOUNT@$SERVER_IP:/usr/share/nginx/portfolio/
+    - ssh-keyscan $SERVER_NAME >> ~/.ssh/known_hosts
+    - scp -r ./build/* $SERVICE_ACCOUNT@$SERVER_NAME:/usr/share/nginx/portfolio/

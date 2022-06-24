@@ -351,4 +351,9 @@ html {
 	.project__tags {
 		margin: 8px 0 0 0;
 	}
+	.version {
+		width: 100%;
+		text-align: center;
+		right: 0;
+	}
 }
