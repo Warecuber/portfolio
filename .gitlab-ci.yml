@@ -36,6 +36,6 @@ deploy:
     - apt install openssh-client -y
     - mkdir -p ~/.ssh
     - eval $(ssh-agent -s)
-    - ssh-add <(echo "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r')
+    - ssh-add <(echo "$WEB_SERVER_SSH_KEY" | tr -d '\r')
     - ssh-keyscan $SERVER_NAME >> ~/.ssh/known_hosts
     - scp -r ./build/* $SERVICE_ACCOUNT@$SERVER_NAME:/usr/share/nginx/portfolio/
