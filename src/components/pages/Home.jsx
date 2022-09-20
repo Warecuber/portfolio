@@ -35,6 +35,7 @@ const Home = () => {
 						<p>JavaScript</p>
 						<p>Python</p>
 						<p>SQL</p>
+						<p>YAML</p>
 					</div>
 				</div>
 				<div className="half-width">
@@ -55,8 +56,8 @@ const Home = () => {
 						</p>
 						<p>ExpressJS</p>
 						<p>Git</p>
-						<p>GitLab/Github</p>
-						<p>GitLab CI pipelines</p>
+						<p>Gitlab/Github</p>
+						<p>Gitlab CI pipelines</p>
 						<p>jQuery</p>
 						<p>Kemp load balancer</p>
 						<p>MongoDB</p>
