@@ -17,24 +17,11 @@ build:
         - build
       expire_in: 1 hour
   
-deploy-main: 
+deploy: 
   image: node:latest
   stage: deploy
-  only:
-    - main
   script:
     - export CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN"
     - export CLOUDFLARE_ACCOUNT_ID="$CLOUDFLARE_ACCOUNT_ID"
     - npm install -g wrangler --unsafe-perm=true
-    - wrangler pages publish ./build --project-name=johnwcoding --branch=main
-
-deploy-dev: 
-  image: node:latest
-  stage: deploy
-  only:
-    - dev
-  script:
-    - export CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN"
-    - export CLOUDFLARE_ACCOUNT_ID="$CLOUDFLARE_ACCOUNT_ID"
-    - npm install -g wrangler --unsafe-perm=true
-    - wrangler pages publish ./build --project-name=johnwcoding --branch=dev
+    - wrangler pages publish ./build --project-name=codingjohn-portfolio --branch=$CI_COMMIT_REF_NAME
