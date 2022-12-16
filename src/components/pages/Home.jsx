@@ -30,6 +30,7 @@ const Home = () => {
 							</a>
 						</p>
 						<p>CSS</p>
+						<p>Cisco Catalyst Switches</p>
 						<p>Deluge Script</p>
 						<p>HTML</p>
 						<p>JavaScript</p>
@@ -60,11 +61,13 @@ const Home = () => {
 						<p>Gitlab CI pipelines</p>
 						<p>jQuery</p>
 						<p>Kemp load balancer</p>
+						<p>Linux Servers</p>
 						<p>MongoDB</p>
 						<p>MySQL/MariaDB</p>
 						<p>MySQL Workbench</p>
 						<p>Nginx</p>
 						<p>Postman</p>
+						<p>Proxmox</p>
 						<p>
 							<a
 								href="https://github.com/Warecuber/portfolio"
@@ -76,11 +79,11 @@ const Home = () => {
 							</a>
 						</p>
 						<p>React Native</p>
-						<p>React Native Debugger</p>
 						<p>Regex</p>
-						<p>Splunk</p>
 						<p>Robo 3T</p>
-						<p>Debian/RHEL Linux Distros</p>
+						<p>Splunk</p>
+						<p>TrueNAS</p>
+						<p>Unifi Networking</p>
 						<p>VSCode</p>
 					</div>
 				</div>
