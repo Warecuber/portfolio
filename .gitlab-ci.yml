@@ -26,7 +26,7 @@ deploy-main:
     - export CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN"
     - export CLOUDFLARE_ACCOUNT_ID="$CLOUDFLARE_ACCOUNT_ID"
     - npm install -g wrangler --unsafe-perm=true
-    - wrangler pages publish ./build --project-name=johnwcoding
+    - wrangler pages publish ./build --project-name=johnwcoding --branch=main
 
 deploy-dev: 
   image: node:latest
