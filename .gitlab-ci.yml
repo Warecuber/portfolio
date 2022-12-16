@@ -1,0 +1,46 @@
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+build:
+  image: node:latest
+  stage: build
+  script:
+    - version_number=$(date +"%Y.%m.%d.%H%M-$CI_BUILD_REF_NAME")
+    - echo "REACT_APP_VERSION='$version_number'" > .env
+    - npm i
+    - npm run build
+  artifacts:
+      when: on_success
+      name: portfolio-build
+      paths:
+        - build
+      expire_in: 1 hour
+  
+deploy-main: 
+  image: node:latest
+  stage: deploy
+  only:
+    - main
+  variables:
+    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
+    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
+  script:
+    - npm install -g wrangler --unsafe-perm=true
+    - wrangler pages publish ./build --project-name=johnwcoding
+
+deploy-dev: 
+  image: node:latest
+  stage: deploy
+  only:
+    - dev
+  variables:
+    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
+    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
+  script:
+    - npm install -g wrangler --unsafe-perm=true
+    - wrangler pages publish ./build --project-name=johnwcoding --branch=dev
