@@ -30,7 +30,6 @@ const Home = () => {
 							</a>
 						</p>
 						<p>CSS</p>
-						<p>Cisco Catalyst Switches</p>
 						<p>Deluge Script</p>
 						<p>HTML</p>
 						<p>JavaScript</p>
@@ -44,6 +43,7 @@ const Home = () => {
 					<div className="experience">
 						<p>Ansible Tower/AWX</p>
 						<p>Bcrypt</p>
+						<p>Cisco Catalyst Switches</p>
 						<p>Docker</p>
 						<p>
 							<a
