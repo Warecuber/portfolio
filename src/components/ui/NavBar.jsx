@@ -61,13 +61,13 @@ const NavBar = () => {
                 Projects
               </Link>
               <Link
-                to="/education"
+                to="/favorite_resources"
                 className="header__button"
                 onClick={() => {
                   setMobileNavIsOpen(false);
                 }}
               >
-                Education
+                Favorite Resources
               </Link>
               <a
                 href="https://github.com/warecuber"
