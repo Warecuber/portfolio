@@ -1,7 +1,7 @@
 import { React } from "react";
 import Project from "../../ui/Project";
 
-export default () => {
+const Wedding = () => {
   return (
     <Project
       title="Wedding Website"
@@ -26,3 +26,5 @@ export default () => {
     />
   );
 };
+
+export default Wedding;

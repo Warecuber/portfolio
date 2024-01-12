@@ -4,7 +4,7 @@ import Project from "../../ui/Project";
 import awx_workflow from "./img/awx_workflow.png";
 import awx_survey from "./img/awx_survey.png";
 
-export default () => {
+const ServerProvisioning = () => {
   return (
     <Project
       title="Automated Server Provisioning"
@@ -40,3 +40,5 @@ export default () => {
     />
   );
 };
+
+export default ServerProvisioning;
